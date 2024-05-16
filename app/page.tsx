@@ -1,7 +1,12 @@
+import React from "react";
 
-
-export default function Home() {
+const LandingPage = () => {
   return (
-   <div>Heloo Treelo</div>
+    <div>
+      Hello Trello
+    </div>
   );
 }
+
+export default LandingPage;
+  
