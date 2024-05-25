@@ -3,19 +3,20 @@ import Link from "next/link";
 import localFont from "next/font/local";
 
 
-export const logo = () =>{
+export const Logo = () =>{
     return (
      
         <Link href="/">
-            <div className=" hover:opacity-75 transition items-center gap-x-2 hidden md:flex ">
+            <div className="items-center gap-x-2 hidden md:flex ">
                <Image 
-                src="/logo.svg"
+               className="hover:opacity-75 transition"
+               src={"/logo.svg"}
                 alt="logo"
-                height={30}
-                width={30} 
+                height={90}
+                width={90} 
                 />
 
-            <p className={"text-lg text-neutral-700 pb-1"}>
+            <p className={"text-2xl text-neutral-700 pb-1 font-black hover:opacity-75 transition"}>
                 Taskify
             </p>
             </div>
@@ -25,3 +26,5 @@ export const logo = () =>{
 
     )
 }
+
+export default  Logo;
